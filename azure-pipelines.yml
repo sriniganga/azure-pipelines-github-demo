@@ -1,0 +1,21 @@
+# ── Pipeline for a GitHub repo, running on Azure Pipelines ────────────
+trigger:
+  - main          # runs when code is pushed to main on GitHub
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: UseNode@1
+    inputs:
+      version: '20.x'
+    displayName: 'Install Node.js'
+
+  - script: npm test
+    displayName: 'Run tests'
+
+  - script: npm run build
+    displayName: 'Build'
+
+  - script: echo "This pipeline runs on Azure but lives in GitHub!"
+    displayName: 'Confirmation'

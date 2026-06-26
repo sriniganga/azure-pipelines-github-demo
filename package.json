@@ -1,0 +1,10 @@
+{
+  "name": "azure-pipelines-github-demo",
+  "version": "1.0.0",
+  "description": "Demo of GitHub + Azure Pipelines integration",
+  "scripts": {
+    "test": "node test.js",
+    "build": "echo 'Build step complete'"
+  },
+  "license": "MIT"
+}
