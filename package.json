@@ -4,7 +4,7 @@
   "description": "Demo of GitHub + Azure Pipelines integration",
   "scripts": {
     "test": "node test.js",
-    "build": "echo 'Build step complete'"
+    "build": "echo 'Build steps complete'"
   },
   "license": "MIT"
 }
